@@ -1,35 +1,21 @@
-package com.locadora.user_service.model;
+package com.locadora.user_service.dto.request;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document(collection = "users")
-public class User {
-    @Id
-    private String id;
+public class UserRequestDTO {
     private String name;
     private String email;
     private String password;
 
     // Construtor vazio
-    public User() {}
+    public UserRequestDTO() {}
 
     // Construtor com parâmetros
-    public User(String name, String email, String password) {
+    public UserRequestDTO(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;
     }
 
     // Getters e Setters
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
@@ -52,14 +38,5 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                '}';
     }
 }

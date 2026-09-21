@@ -1,6 +1,6 @@
 # Microsserviço de Locadora de Carros
 
-Microsserviço desenvolvido em **Java** com **Spring Boot** para o gerenciamento de usuários de uma locadora de carros.
+Microsserviço desenvolvido em **Java** com **Spring Boot** para simular o gerenciamento de usuários de uma locadora de carros.
 
 O principal objetivo deste projeto foi **aplicar na prática conceitos de Engenharia e Arquitetura de Software**,
 utilizando uma arquitetura em camadas, desenvolvimento de APIs REST e conteinerização da aplicação com **Docker** para o processo de deploy. 
